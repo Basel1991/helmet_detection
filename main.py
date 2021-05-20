@@ -11,5 +11,5 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    video_path = "params.txt"
-    down_sample(video_path)
+    params_path = "params.txt"
+    down_sample(params_path)

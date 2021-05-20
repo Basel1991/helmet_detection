@@ -22,7 +22,8 @@ def down_sample(file_path):
     new_file = dsampled_path
     new_fps = 5
 
-    command = f'ffmpeg -i {v_name} -ss {start}  -filter:v crop={out_w}:{out_h}:{x}:{y},scale={width}:{height}, fps={new_fps} -c:a copy -to {end} {new_file}'
+    command = f'ffmpeg -i "{v_name}" -ss {start} -r 5  -filter:v crop={out_w}:{out_h}:{x}:{y},scale={width}:{height} -c:a copy -to {end} "{new_file}"'
 
+#fps={new_fps}
     subprocess.call(command, shell=True)
     print(command)
