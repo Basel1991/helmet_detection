@@ -4,7 +4,7 @@ import json
 import subprocess
 
 def down_sample(file_path):
-    with open("params.txt") as file:
+    with open(file_path) as file:
         params = json.load(file)
 
     # read the path to the video and the path where to save the down-sampled version
