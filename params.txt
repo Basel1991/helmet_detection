@@ -1,4 +1,4 @@
 {
-     "video_path": "E:\\Python files\\MGS_assignment\\video.mp4",
-     "new_video_path": "E:\\Python files\\MGS_assignment\\video_dsampled.mp4"
+     "video_path": "./video.mp4",
+     "new_video_path": "./video_dsampled.mp4"
 }

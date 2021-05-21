@@ -1,0 +1,16 @@
+REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+<none>                  <none>              45276f16d7b8        12 minutes ago      524MB
+<none>                  <none>              eaba8cdbdf29        12 minutes ago      524MB
+<none>                  <none>              8e2e00171b95        21 minutes ago      524MB
+<none>                  <none>              bf176982008e        24 minutes ago      524MB
+<none>                  <none>              c4b8950c6e84        26 minutes ago      524MB
+<none>                  <none>              42e3d493d70f        27 minutes ago      524MB
+python_mgs              latest              5522f7e82cf6        34 minutes ago      524MB
+python-app              latest              a214e6ad2db5        2 months ago        423MB
+ubuntu                  latest              4dd97cefde62        2 months ago        72.9MB
+tensorflow/tensorflow   latest-gpu-py3      e2a4af785bdb        16 months ago       4.11GB
+hello-world             latest              bf756fb1ae65        16 months ago       13.3kB
+
+
+
+45276f16d7b8 eaba8cdbdf29 8e2e00171b95 bf176982008e c4b8950c6e84 42e3d493d70f 5522f7e82cf6 a214e6ad2db5 4dd97cefde62 e2a4af785bdb bf756fb1ae65
