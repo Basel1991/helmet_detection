@@ -1,4 +1,7 @@
 {
      "video_path": "E:\\Python files\\MGS_assignment\\video.mp4",
-     "new_video_path": "E:\\Python files\\MGS_assignment\\video_dsampled.mp4"
+     "new_video_path": "E:\\Python files\\MGS_assignment\\video_dsampled.mp4",
+	 "new_video_width": 800,
+	 "new_video_fps": 5
+	 
 }

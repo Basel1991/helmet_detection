@@ -1,7 +1,9 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+"""
+This script is to run helmet detection and video downsampling code using ffmpeg.
+Author: Basel Alyafi
+22/05/2021
+"""
+import sys
 
 from utils import down_sample
 def print_hi(name):
@@ -11,5 +13,11 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    params_path = "params.txt"
+    # reading the parameters path. By default it's 'params.txt'
+    if len(sys.argv) < 2:
+        print("parameters file not passed, default is 'params.txt'")
+        params_path = "params.txt"
+    else:
+        params_path = sys.argv[1]
+
     down_sample(params_path)

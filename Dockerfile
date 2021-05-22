@@ -25,4 +25,5 @@ RUN apk add -q python3
 # RUN apt-get clean
 #=============================================
 COPY ./ /
-CMD python3 ./main.py
+ENTRYPOINT ["python3", "./main.py"]
+CMD ["params.txt"]

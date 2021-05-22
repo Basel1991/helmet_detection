@@ -1,29 +1,26 @@
 import json
-
-# read json file
 import subprocess
 
-def down_sample(file_path):
-    with open(file_path) as file:
+def down_sample(json_path):
+    """
+    This function downsamples a video (given the video_path in the passed JSON file)
+    It sets the fps (frames per second) to five by default.
+    :param file_path: str, the path to the JSON parameters file
+    :return: void
+    """
+    with open(json_path) as file:
         params = json.load(file)
 
     # read the path to the video and the path where to save the down-sampled version
     video_path = params['video_path']
     dsampled_path = params['new_video_path']
+    width = params['new_video_width']
 
-    v_name = video_path
-    start = 0
-    out_w = 480
-    out_h = 360
-    x, y= 0, 0
-    width = 800
+    # this height is to keep the same aspect ratio
     height = -2
-    end = 30
-    new_file = dsampled_path
-    new_fps = 5
+    new_fps = params['new_video_fps']
 
-    command = f'ffmpeg -i "{v_name}" -ss {start} -r 5  -filter:v crop={out_w}:{out_h}:{x}:{y},scale={width}:{height} -c:a copy -to {end} "{new_file}"'
+    command = f'ffmpeg -i "{video_path}" -r {new_fps}  -filter:v scale={width}:{height} "{dsampled_path}"'
 
-#fps={new_fps}
     subprocess.call(command, shell=True)
     print(command)
