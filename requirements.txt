@@ -1,0 +1,4 @@
+pyttsx3==2.90
+opencv_python
+imutils==0.5.4
+numpy==1.19.5
