@@ -41,11 +41,10 @@ Good question. To run this application please follow these steps:
         
 # 5. Example
 This was the input video
-https://user-images.githubusercontent.com/23275312/119231525-a3b82000-bb21-11eb-8400-65106c03a271.mp4
+
+https://user-images.githubusercontent.com/23275312/119231757-ca2a8b00-bb22-11eb-8044-c18f60ecf85a.mp4
+
 
 And this was the ouput down-sampled and helmet detected with 0.6 confidence.
 
-
-https://user-images.githubusercontent.com/23275312/119231687-7029c580-bb22-11eb-9445-d72ae896d6a1.mp4
-
-
+https://user-images.githubusercontent.com/23275312/119231736-af581680-bb22-11eb-8662-056ba8992c47.mp4
