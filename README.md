@@ -37,7 +37,13 @@ Good question. To run this application please follow these steps:
         1. Download the video
         2. create new_params.txt file following the description in section 1.
         3. '<docker run baselalyafi/python-helmet new_params.txt>'
-    3. In case you want only down-sampling (no helmet detection), follow as before and check the videos directory for the dsampled version of the video.
+    3. In case toy need to run it without docker, 
+    you need to download the weights of the model as they are too large to be on GitHub.
+        Steps:
+            1. Go to https://drive.google.com/file/d/1_xBdP1GRK4i7yzJP8_a5GWaejZZKjdyI/view.
+            2. Download into ./yolo-coco.
+            3. Run '<python3 ./helmet_detect.py params.txt>'
+    4. In case you want only down-sampling (no helmet detection), follow as before and check the videos directory for the dsampled version of the video.
         
 # 5. Example
 This was the input video
