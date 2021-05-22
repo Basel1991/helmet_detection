@@ -1,11 +1,14 @@
 #FROM ubuntu
 #FROM python:slim-buster
 #FROM python:3.6-alpine
+#From alpine:latest
+FROM python:3.6-slim-stretch
 
-From alpine:latest
-
-RUN apk add -q ffmpeg
-RUN apk add -q python3
+#--------------------------------------------------- alpine methods
+#RUN apk add -q ffmpeg
+#RUN apk add -q python3
+#RUN apk add -q py3-pip
+#RUN pip install --upgrade pip
 
 #--------------------------------------------------
 # RUN apt-get install -y --no-install-recommends wget xz-utils
@@ -24,6 +27,14 @@ RUN apk add -q python3
 # RUN apt-get purge   --auto-remove
 # RUN apt-get clean
 #=============================================
+
 COPY ./ /
-ENTRYPOINT ["python3", "./main.py"]
+
+RUN apt-get -y update
+RUN apt-get install -y --no-install-recommends ffmpeg
+#RUN apt-get install -y --no-install-recommends python3
+RUN apt-get install -y --no-install-recommends python3-pip
+RUN pip3 install -r ./requirements.txt
+
+ENTRYPOINT ["python3", "./helmet_detect.py"]
 CMD ["params.txt"]

@@ -1,16 +1,27 @@
-REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
-<none>                  <none>              45276f16d7b8        12 minutes ago      524MB
-<none>                  <none>              eaba8cdbdf29        12 minutes ago      524MB
-<none>                  <none>              8e2e00171b95        21 minutes ago      524MB
-<none>                  <none>              bf176982008e        24 minutes ago      524MB
-<none>                  <none>              c4b8950c6e84        26 minutes ago      524MB
-<none>                  <none>              42e3d493d70f        27 minutes ago      524MB
-python_mgs              latest              5522f7e82cf6        34 minutes ago      524MB
-python-app              latest              a214e6ad2db5        2 months ago        423MB
-ubuntu                  latest              4dd97cefde62        2 months ago        72.9MB
-tensorflow/tensorflow   latest-gpu-py3      e2a4af785bdb        16 months ago       4.11GB
-hello-world             latest              bf756fb1ae65        16 months ago       13.3kB
+python "E:\Python files\MGS_assignment\video_downsampling.py" params_win.txt
+
+python "E:\Python files\MGS_assignment\helmet_detect.py" params_win.txt
 
 
 
-45276f16d7b8 eaba8cdbdf29 8e2e00171b95 bf176982008e c4b8950c6e84 42e3d493d70f 5522f7e82cf6 a214e6ad2db5 4dd97cefde62 e2a4af785bdb bf756fb1ae65
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+<none>              <none>              f30c3b7661da        8 minutes ago       146MB
+<none>              <none>              9eb39d05b9fa        32 minutes ago      157MB
+<none>              <none>              7cb27ee16cb9        34 minutes ago      696MB
+<none>              <none>              ff0b0b707a60        37 minutes ago      393MB
+<none>              <none>              48f6a0de5c18        38 minutes ago      393MB
+<none>              <none>              49a25b830755        44 minutes ago      108MB
+<none>              <none>              aec8621783d0        58 minutes ago      423MB
+<none>              <none>              f806c0bf6659        About an hour ago   412MB
+<none>              <none>              b3f480f2edec        About an hour ago   395MB
+<none>              <none>              0305de4b3ff5        About an hour ago   395MB
+python              3.6-slim-stretch    6931c38905c4        9 days ago          96.8MB
+python              slim-buster         afaa64e7c7fe        9 days ago          115MB
+python              3.6-alpine          118f82a946c9        2 weeks ago         40.6MB
+alpine              latest              6dbb9cc54074        5 weeks ago         5.61MB
+
+
+
+
+docker rmi f30c3b7661da 9eb39d05b9fa 7cb27ee16cb9 ff0b0b707a60 48f6a0de5c18 49a25b830755 aec8621783d0 f806c0bf6659 b3f480f2edec  0305de4b3ff5 6931c38905c4 afaa64e7c7fe 118f82a946c9 6dbb9cc54074

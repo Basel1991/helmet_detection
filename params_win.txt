@@ -1,7 +1,17 @@
 {
-     "video_path": "E:\\Python files\\MGS_assignment\\video.mp4",
-     "new_video_path": "E:\\Python files\\MGS_assignment\\video_dsampled.mp4",
-	 "new_video_width": 800,
-	 "new_video_fps": 5
+	 "-README":"-------video down-sampling parameters--------",
+	 
+	 "video_path": "E:\\Python files\\MGS_assignment\\videos\\video_preview_h264.mp4",
+     "new_video_path": "E:\\Python files\\MGS_assignment\\videos\\video_preview_h264_dsampled.mp4",
+     "new_video_width": 800,
+     "new_video_fps": 5,
+	 
+	 
+	 "-README":"-------helmet detection parameters--------",
+	 
+     "output": "./output/helmet_detection.avi",
+     "yolo": "./yolo-coco",
+     "confidence": 0.6,
+     "threshold": 0.3
 	 
 }
