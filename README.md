@@ -47,4 +47,4 @@ https://user-images.githubusercontent.com/23275312/119231757-ca2a8b00-bb22-11eb-
 
 And this was the ouput down-sampled and helmet detected with 0.6 confidence.
 
-https://user-images.githubusercontent.com/23275312/119231736-af581680-bb22-11eb-8662-056ba8992c47.mp4
+https://user-images.githubusercontent.com/23275312/119231886-41601f00-bb23-11eb-9f89-8d5cd2a505da.mp4
