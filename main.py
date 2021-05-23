@@ -5,7 +5,6 @@ Date: 22/05/2021
 """
 import json
 import sys
-
 from utils import down_sample
 
 # Press the green button in the gutter to run the script.
