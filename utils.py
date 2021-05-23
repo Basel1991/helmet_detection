@@ -1,9 +1,13 @@
+"""
+Author: Basel Alyafi
+Date: 23/05/2021
+"""
 import json
 import subprocess
 
 def down_sample(json_params):
     """
-    This function downsamples a video (given the video_path in the passed JSON file)
+    This function down-samples a video (given the video_path in the passed JSON file)
     It sets the fps (frames per second) to five by default.
     :param file_path: str, the path to the JSON parameters file
     :return: void
@@ -20,5 +24,6 @@ def down_sample(json_params):
 
     command = f'ffmpeg -i "{video_path}" -r {new_fps}  -filter:v scale={width}:{height} "{dsampled_path}"'
 
+    # call the command using shell
     subprocess.call(command, shell=True)
     print(command)

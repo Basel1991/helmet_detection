@@ -1,7 +1,15 @@
-# This script was adopted from the GitHub repository https://github.com/AyazSaiyed/Helmet-Detection-
-#----------Developer - Ayaz Saiyed M.-------------#
-# USAGE
-# python helmet_detect.py --input videos/myold.mp4 --output output/detected_helmets.avi --yolo yolo-coco
+"""
+This script uses DarkNet from OpenCV to detect helmets in videos.
+This script was adopted and modified from the GitHub repository https://github.com/AyazSaiyed/Helmet-Detection- (Developer - Ayaz Saiyed M.)
+
+---How to use---
+python helmet_detect.py params.txt
+
+params: the JSON file where the parameters are saved.
+
+By: Basel Alyafi
+Date: 23/05/2021
+"""
 
 # import the necessary packages
 import json
@@ -26,10 +34,10 @@ else:
 # read the json file
 with open(params_path) as file:
 	params = json.load(file)
+
 #down-sample the video before detecting helmets
 down_sample(params)
 
-# engine = pyttsx3.init()
 # load the COCO class labels this YOLO model was trained on
 labelsPath = os.path.sep.join([params["yolo"], "cocohelmet.names"])
 LABELS = open(labelsPath).read().strip().split("\n")
@@ -54,8 +62,6 @@ ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 # frame dimensions - uncomment below line if inputting a video file rather than webcam.
 vs = cv2.VideoCapture(params["new_video_path"])
 
-# vs = cv2.VideoCapture(0)
-
 writer = None
 (W, H) = (None, None)
 
@@ -74,8 +80,6 @@ except:
 	total_frames = -1
 
 # loop over frames from the video file stream
-
-
 for frame_idx in range(total_frames):
 
 	print(f"Frame {frame_idx}/{total_frames-1}")
@@ -162,7 +166,7 @@ for frame_idx in range(total_frames):
 	if writer is None:
 		# initialize our video writer
 		fourcc = cv2.VideoWriter_fourcc(*"MJPG")
-		writer = cv2.VideoWriter(params["output"], fourcc, 1,
+		writer = cv2.VideoWriter(params["output"], fourcc, params["new_video_fps"],
 			(frame.shape[1], frame.shape[0]), True)
 
 		# some information on processing single frame
@@ -173,8 +177,8 @@ for frame_idx in range(total_frames):
 
 # do a bit of cleanup
 	cv2.destroyAllWindows()
-	# write the output frame to disk
 
+# write the output frame to disk
 	writer.write(frame)
 	
 # release the file pointers

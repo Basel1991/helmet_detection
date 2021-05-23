@@ -1,10 +1,15 @@
 """
 This script is to write downsampling / YOLO running parameters to a JSON file ("params.txt")
+
+Author: Basel Alyafi
+Date: 23/05/2021
 """
 import json
 params = {}
 
 #-------------- video down-sampling section
+#-------------- check https://github.com/Basel1991/helmet_detection for details.
+
 params["video_path"] = "./videos/video.mp4"
 params["new_video_path"] = "./videos/video_dsampled.mp4"
 params["new_video_width"] = 800

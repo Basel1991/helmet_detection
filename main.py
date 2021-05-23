@@ -1,16 +1,12 @@
 """
-This script is to run helmet detection and video downsampling code using ffmpeg.
+This script is to run helmet detection and video down-sampling code using ffmpeg.
 Author: Basel Alyafi
-22/05/2021
+Date: 22/05/2021
 """
 import json
 import sys
 
 from utils import down_sample
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
