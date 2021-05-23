@@ -53,7 +53,7 @@ https://user-images.githubusercontent.com/23275312/119231757-ca2a8b00-bb22-11eb-
 
 And this was the ouput down-sampled and helmet detected with 0.6 confidence.
 
-https://user-images.githubusercontent.com/23275312/119232066-11654b80-bb24-11eb-89d9-a1d7a3dd31ef.mp4
+https://user-images.githubusercontent.com/23275312/119251469-00a9e980-bba7-11eb-8312-a8e67ad4a20b.mp4
 
 Author: Basel Alyafi
 https://baselalyafi.netlify.app/
