@@ -19,7 +19,9 @@ if __name__ == '__main__':
 with open(params_path) as file:
         params = json.load(file)
 down_sample(params)
+
+## this part is to push data to a mock web service
 # no_helmets_data = detect_helmet(params)
-detect_helmet(params)
-url = 'enwgex0njtseq.x.pipedream.net'
+# detect_helmet(params)
+# url = 'enwgex0njtseq.x.pipedream.net'
 # post_request(url, no_helmets_data)
