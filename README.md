@@ -43,7 +43,9 @@ Good question. To run this application please follow these steps:
           Steps:
             1. Go to https://drive.google.com/file/d/1953ngQ0bLa83Q2e3XGFHr6HAdFGvBrsf/view?usp=sharing
             2. Download into ./yolo-coco
-            3. Run '<python3 ./helmet_detect.py params.txt>'
+            3. Creating a new environment is highly recommended before installing 
+                the needed libraries using '<pip install -r requirements.txt>' 
+            4. Run '<python3 ./helmet_detect.py params.txt>'
     4. In case you want only down-sampling (no helmet detection), 
     follow as before and check the 'videos' directory for the down-sampled 
     version of the video.

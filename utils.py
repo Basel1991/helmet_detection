@@ -40,7 +40,7 @@ def detect_helmet(params):
     This script was adopted and modified from the GitHub repository https://github.com/AyazSaiyed/Helmet-Detection- (Developer -        Ayaz Saiyed M.)
 
     :param params: parameters data dictionary
-    :return: frames and coordinates of no-helmet locations
+    :return: frames and coordinates of helmet locations (TODO)
     """
     # load the COCO class labels this YOLO model was trained on
     labelsPath = os.path.sep.join([params["yolo"], "cocohelmet.names"])
