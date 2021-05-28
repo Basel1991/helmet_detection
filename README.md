@@ -24,7 +24,7 @@ Examples of the parameters' values are given below:
   "threshold"| 0.3 | non-maxima suppression with threshold 30%
   
 # 2. Run a Pre-trained DarkNet (YOLO)
-This model (DarkNet) from OpenCV was trained on helmet detection. The GitHub repository adopted for this was https://github.com/AyazSaiyed/Helmet-Detection-.git (Many thanks to **Ayaz Saiyed** for the clear code).
+This model (DarkNet) from OpenCV was trained on helmet detection. The GitHub repository adopted for this was https://github.com/AyazSaiyed/Helmet-Detection-.git (Many thanks to **Ayaz Saiyed** for the clear code). The weights for helmet detection were taken from this repository [DarkNet weights] https://github.com/BlcaKHat/yolov3-Helmet-Detection/blob/master/README.md.
 
 # 3. Containerise the Application
 All previous steps were containerised using Docker, and an image with the name baselalyafi/python-helmet can be run.
