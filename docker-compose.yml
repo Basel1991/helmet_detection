@@ -17,6 +17,7 @@ services:
             # output folder to save the output videos in
             # params.txt that you want to use
             
+        # uncomment this line. Remember that on Windows systems that path has to be absolute
         #- <folder_name>:/helmet/
         
       command: /helmet/params.txt
