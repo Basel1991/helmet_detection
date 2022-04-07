@@ -32,11 +32,13 @@ All previous steps were containerised using Docker, and an image with the name b
 # 4. How to Run?
 Good question. To run this application please follow these steps:
 
-    1. Run the command '<Docker run baselalyafi/python-helmet>'
-    2. In case you want to try a different setting
-        1. Locate the new video
-        2. Create new_params.txt file following the description in section 1.
-        3. '<docker run baselalyafi/python-helmet new_params.txt>'
+    1. Inside the same directory of docker-compose.yml, create a folder that contains
+        a. 'videos' folder: contains the videos to work on
+        b. 'output' folder: will contain the down-sampled versions and the final helmet             detection
+        c. params.txt modified accordingly
+    2. add the created folder to docker-compose.yml volumes section and mount it to             'helmet'. e.g. if the folder named test:
+        - test:/helmet
+    2. Run the command '<docker-compose up>' when in the repository.
     3. In case you need to run it without docker,
     you need to download the weights of the model as they
     are too large to be on GitHub.
@@ -46,7 +48,7 @@ Good question. To run this application please follow these steps:
             3. Creating a new environment is highly recommended before installing 
                 the needed libraries using '<pip install -r requirements.txt>' 
             4. Run '<python3 ./helmet_detect.py params.txt>'
-    4. In case you want only down-sampling (no helmet detection), 
+    5. In case you want only down-sampling (no helmet detection), 
     follow as before and check the 'videos' directory for the down-sampled 
     version of the video.
 
