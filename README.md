@@ -39,18 +39,15 @@ Good question. To run this application please follow these steps:
     2. add the created folder to docker-compose.yml volumes section and mount it to             'helmet'. e.g. if the folder named test:
         - test:/helmet
     3. Run the command '<docker-compose up>' when in the repository.
-    4. In case you need to run it without docker,
-    you need to download the weights of the model as they
-    are too large to be on GitHub.
-          Steps:
+    4. In case you need to run it without docker, you need to download the weights of the model as they are too large to be on GitHub.
+        Steps:
             1. Go to https://drive.google.com/file/d/1953ngQ0bLa83Q2e3XGFHr6HAdFGvBrsf/view?usp=sharing
             2. Download into ./yolo-coco
             3. Creating a new environment is highly recommended before installing 
                 the needed libraries using '<pip install -r requirements.txt>' 
             4. Run '<python3 ./helmet_detect.py params.txt>'
     5. In case you want only down-sampling (no helmet detection), 
-    follow as before and check the 'videos' directory for the down-sampled 
-    version of the video.
+    follow as before and check the 'videos' directory for the down-sampled version of the video.
 
         
 # 5. Example
