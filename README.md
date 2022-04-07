@@ -38,8 +38,8 @@ Good question. To run this application please follow these steps:
         c. params.txt modified accordingly
     2. add the created folder to docker-compose.yml volumes section and mount it to             'helmet'. e.g. if the folder named test:
         - test:/helmet
-    2. Run the command '<docker-compose up>' when in the repository.
-    3. In case you need to run it without docker,
+    3. Run the command '<docker-compose up>' when in the repository.
+    4. In case you need to run it without docker,
     you need to download the weights of the model as they
     are too large to be on GitHub.
           Steps:
