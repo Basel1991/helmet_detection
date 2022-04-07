@@ -1,7 +1,7 @@
 # helmet_detection
-Detecting helmets in a video using YOLO v3.
+Detecting helmets in videos using YOLO v3.
 
-The steps that were followed to complete this task were as follows:
+The steps followed to complete this task were
 
 # 1. Video Downsampling
 In this step, ffmpeg is used to scale (down or up) a given video. The parameters are all passed in the params.txt file (JSON format).
