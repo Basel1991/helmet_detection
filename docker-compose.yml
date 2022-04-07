@@ -1,0 +1,26 @@
+#ver:"3.0"
+
+services:
+
+    helmet_detection:
+      build: Dockerfile
+
+      image: baselalyafi/python-helmet
+
+      restart: on-failure
+      
+      container_name: helmet_detect
+      
+      volumes:
+          #mount here the folder that contains
+            # videos folder that contains videos to work on
+            # output folder to save the output videos in
+            # params.txt that you want to use
+            
+        #- <folder_name>:/helmet/
+        
+      command: /helmet/params.txt
+    
+
+volumes:
+  test:
