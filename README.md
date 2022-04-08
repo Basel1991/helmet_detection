@@ -34,9 +34,9 @@ Good question. To run this application please follow these steps:
 
     1. Inside the same directory of docker-compose.yml, create a folder that contains
         a. 'videos' folder: contains the videos to work on
-        b. 'output' folder: will contain the down-sampled versions and the final helmet             detection
+        b. 'output' folder: will contain the down-sampled versions and the final helmet detection
         c. params.txt modified accordingly
-    2. add the created folder to docker-compose.yml volumes section and mount it to             'helmet'. e.g. if the folder named test:
+    2. add the created folder to docker-compose.yml volumes section and mount it to 'helmet'. e.g. if the folder named test:
         - test:/helmet
     3. Run the command '<docker-compose up>' when in the repository.
     4. In case you need to run it without docker, you need to download the weights of the model as they are too large to be on GitHub.
