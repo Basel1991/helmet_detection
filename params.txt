@@ -1,6 +1,6 @@
 {
-     "video_path": "./videos/video_preview_h264.mp4",
-     "new_video_path": "./videos/video_preview_h264_dsampled.mp4",
+     "video_path": "./helmet/videos/video_preview_h264.mp4",
+     "new_video_path": "./helmet/videos/video_preview_h264_dsampled.mp4",
      "new_video_width": 800,
      "new_video_fps": 5,
      
